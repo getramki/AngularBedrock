@@ -12,7 +12,7 @@ This repo contain two folders
 ___
 ### Prerequisites
 AWS Account and IAM user with necessary permissions for creating Lambda, aws cli, SAM cli, configure IAM user with necessary programmatic permissions.
-In you AWS Account you need to apply and get access to the foundation model 'Jurassic-2 Ultra' in Amazon Bedrock service. You can also try with other test generating models by changing the code in Lambda function.
+In you AWS Account you need to apply and get access to the foundation model 'Jurassic-2 Ultra' in Amazon Bedrock service. You can also try with other text generating models by changing the code in Lambda function.
 
 * Install and configure Angular CLI, NodeJS and npm. You can follow respective guides from their websites.
 
@@ -28,7 +28,7 @@ After downloading the repo in the terminal Change Directory to repo directory an
 
 * Deploy the SAM template. You can follow the guide here https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html
 
-or Manually Create the Lambda function and create a layer and add it to Lambda function
+* Or Manually Create the Lambda function and create a layer and add it to Lambda function
 
 * Make sure Lambda has necessary role with permissions to access Amazon Bedrock.
 ___
@@ -50,7 +50,8 @@ After all packages are installed run
 You can access you Angular app here
 <pre><code>http://localhost:4200/</pre></code>
 
-Future Improvements
+___
+### Future Improvements
 This repo can be further improved to build more prompts for various other scenarios like Insurance Policy Generation, ChatBot, etc and options to choose other foundation models.
 
 * Make sure you dont expose your API Gateway endpoint and secure it with Cognito and impliment throtelling in production scenarios.

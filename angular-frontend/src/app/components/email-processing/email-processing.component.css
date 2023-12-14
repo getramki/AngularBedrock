@@ -1,0 +1,12 @@
+.usecase-container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 96%;
+    border-style: ridge;
+    margin-top: 0.8%;
+    margin-left: 0.8%;
+}
+.headding{
+    align-self: center;
+}

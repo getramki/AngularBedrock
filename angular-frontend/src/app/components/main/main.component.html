@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Insurance Domain - Generative AI Usecases Central</span>      
+    <span class="spacer"></span>
+    <button mat-icon-button routerLink="/welcome">
+      <mat-icon>login</mat-icon>
+    </button>      
+  </mat-toolbar>
+<mat-drawer-container class="main-drawer-container">
+    <mat-drawer #drawer class="main-sidenav" mode="side" opened>      
+        <h4 class="sidenav-heading" routerLink="/welcome">Use Cases</h4>          
+        <button mat-flat-button color="accent"class="sidenav-btn" routerLink="/gen-risk-scenarios">Generate Risk Scenarios</button>                
+        <!-- <button mat-flat-button color="accent"class="sidenav-btn" routerLink="/gen-policy-doc">Generate Policy Documentation</button>
+        <button mat-flat-button color="accent"class="sidenav-btn" routerLink="/email-processing">E-Mail Processing</button>
+        <button mat-flat-button color="accent"class="sidenav-btn" routerLink="/customer-chatbot">Customer Chatbot</button> -->
+    </mat-drawer>
+    <mat-drawer-content>        
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

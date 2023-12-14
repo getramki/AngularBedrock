@@ -1,0 +1,83 @@
+.usecase-container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 96%;
+    border-style: ridge;
+    margin-top: 0.8%;
+    margin-left: 0.8%;
+}
+
+.headding{
+    align-self: center;
+}
+.riskFormFields{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.genderformfield{
+    margin-left: 10px;
+    width: 150px;
+    height: 75px;
+}
+
+.ageformfield{
+    margin-left: 10px;
+    width: 100px;
+    height: 75px;
+}
+
+.genericformfield{
+    margin-left: 10px;
+    width: 250px;
+    height: 75px;
+}
+
+.daterangeformfield{
+    margin-left: 10px;
+    width: 250px;
+    height: 75px;
+}
+
+.submitButton{
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+}
+
+.testFillBtn{
+    margin-left: 20px;
+    height: 50px;
+}
+
+.reqTextArea{
+    width: 98%;
+    margin-left: 1%;
+    height: 100px;
+}
+
+.reqspTextArea{
+    width: 98%;
+    margin-left: 1%;
+    height: 400px;
+}
+
+.reqspTextAreaInput{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.genAIResponseCard{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+.responseContent{
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}

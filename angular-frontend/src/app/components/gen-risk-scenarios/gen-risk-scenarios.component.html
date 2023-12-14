@@ -1,0 +1,81 @@
+<div class="usecase-container">
+    <h1 class="headding">  Generate Risk Scenarios </h1>
+    <div>
+        <form [formGroup]="riskProfileForm" (ngSubmit)="onSubmit()">
+            <div class="riskFormFields">
+                <mat-form-field class="genericformfield">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name" type="text">
+                </mat-form-field>
+                <mat-form-field class="genderformfield">
+                    <mat-label>Gender</mat-label>
+                    <mat-select formControlName="gender">
+                      <mat-option value="Male">Male</mat-option>
+                      <mat-option value="Female">Female</mat-option>
+                      <mat-option value="Transgender">Transgender</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="ageformfield">
+                    <mat-label>Age</mat-label>
+                    <input matInput formControlName="age" type="number">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Travel Origin</mat-label>
+                    <input matInput formControlName="travelOrigin" type="text">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Travel Destination</mat-label>
+                    <input matInput formControlName="travelDestination" type="text">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Travel Stops</mat-label>
+                    <input matInput formControlName="travelStops" type="text">
+                </mat-form-field>
+                <mat-form-field class="daterangeformfield">
+                    <mat-label>Enter a date range</mat-label>
+                    <mat-date-range-input [rangePicker]="picker">
+                      <input matStartDate formControlName="travelStartDate" placeholder="Start date">
+                      <input matEndDate formControlName="travelEndDate" placeholder="End date">
+                    </mat-date-range-input>                    
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Travel Mode</mat-label>
+                    <input matInput formControlName="travelMode" type="text">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Carrier</mat-label>
+                    <input matInput formControlName="carrier" type="text">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Travel Purpose</mat-label>
+                    <input matInput formControlName="travelPurpose" type="text">
+                </mat-form-field>
+                <mat-form-field class="genericformfield">
+                    <mat-label>Pre Medical Conditions</mat-label>
+                    <input matInput formControlName="preMedicalConditions" type="text">
+                </mat-form-field>
+                <button mat-flat-button color="primary" class="submitButton" type="submit">Submit</button>                      
+            </div>            
+        </form>
+        <!-- <button mat-flat-button color="primary" (click)="fill()" class="testFillBtn">Fill Test Data</button>  -->
+    </div>
+    <div *ngIf="requestSubmit">
+        <mat-card class="genAIResponseCard">
+            <mat-card-header>
+                <mat-card-title>Risk Scenarios for the Travel Policy</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="responseContent">
+                    <pre>
+                        {{response}}
+                    </pre>
+                </div>                        
+            </mat-card-content>
+            <mat-card-footer>
+                <mat-progress-bar mode="indeterminate" *ngIf="showProgress"></mat-progress-bar>
+            </mat-card-footer>
+          </mat-card>
+    </div>
+</div>

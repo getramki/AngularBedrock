@@ -3,7 +3,7 @@ You can build an Angular App as a front end to build prompts and query the Amazo
 This code repo for is a demonstration to build the App and access the Bedrock service through API Gateway and Lambda.
 ___
 ### Scenario
-Insurance company has estimate and evaluate risk scenarios before underwritting any policy and it is a complicated task the given the vast amount of data which needs to be taken into account to generate risk scenarios. In this code a prompt is build with the given user inputs and it is sent Amazon Bedrock Service to generate the Risk Scenarios.
+Insurance companies have to estimate and evaluate risk scenarios before underwritting any policy and it is a complicated task the given the vast amount of data which needs to be taken into account, analyze it and generate risk scenarios. This is a good use case for using Generative AI technology. In this code a prompt is build with the given user inputs and it is sent Amazon Bedrock Service to generate the Risk Scenarios.
 ___
 ### Structure of this repo
 This repo contain two folders

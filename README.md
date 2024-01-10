@@ -52,6 +52,18 @@ You can access you Angular app here
 <pre><code>http://localhost:4200/</pre></code>
 
 ___
+### Screen Shoths of the UI
+
+Welcome Screen
+![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-welcome-screen.png?raw=true)
+
+Risk Screen filled with Input data 
+![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-risk-filled-screen.png?raw=true)
+
+Risk Scenarios Generated
+![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-risk-scenarios-screen.png?raw=true)
+
+___
 ### Future Improvements
 This repo can be further improved to build more prompts for various other scenarios like Insurance Policy Generation, ChatBot, etc and options to choose other foundation models.
 

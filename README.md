@@ -55,13 +55,13 @@ ___
 ### Screen Shoths of the UI
 
 Welcome Screen
-![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-welcome-screen.png?raw=true)
+![alt text](https://github.com/getramki/AngularBedrock/blob/main/ui-screen-shots/genai-angular-welcome-screen.png?raw=true)
 
 Risk Screen filled with Input data 
-![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-risk-filled-screen.png?raw=true)
+![alt text](https://github.com/getramki/AngularBedrock/blob/main/ui-screen-shots/genai-angular-risk-filled-screen.png?raw=true)
 
 Risk Scenarios Generated
-![alt text](https://github.com/getramki/AngularBedrock/ui-screen-shots/genai-angular-risk-scenarios-screen.png?raw=true)
+![alt text](https://github.com/getramki/AngularBedrock/blob/main/ui-screen-shots/genai-angular-risk-scenarios-screen.png?raw=true)
 
 ___
 ### Future Improvements
